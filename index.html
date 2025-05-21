@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Peso de Barra de Ferro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <img src="logo-original.png" alt="">
+        <h1>Calculadora de Peso de Barra de Ferro</h1>
+
+        <div class="info-calculo">
+            <strong>Base do Cálculo:</strong> r² x TT x comprimento x 8
+            Raio e Comprimento são inseridos em **milímetros**.
+        </div>
+
+        <form id="calculadoraForm">
+            <label for="raio">Raio (milímetros):</label>
+            <input type="number" id="raio" step="0.1" placeholder="Ex: 11.11" required>
+            <p class="unidades-info">Insira o raio em **milímetros** (ex: 11.11)</p>
+
+            <label for="comprimento">Comprimento (milímetros):</label>
+            <input type="number" id="comprimento" step="0.1" placeholder="Ex: 6000 (para 6 metros)" required>
+            <p class="unidades-info">Insira o comprimento em **milímetros** (ex: 6000 para 6 metros)</p>
+
+            <button type="submit">Calcular Peso</button>
+        </form>
+
+        <div id="resultado">
+            O peso será exibido aqui.
+        </div>
+    </div>
+</body>
+</html>
